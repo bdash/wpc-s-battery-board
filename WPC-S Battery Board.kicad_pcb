@@ -753,6 +753,9 @@
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp f4f6bbcb-cfe9-4e61-bca7-199bcf4ef49f))
   (gr_line (start 91.35 159.68) (end 91.35 42.18)
     (stroke (width 0.1) (type default)) (layer "Edge.Cuts") (tstamp fda7e1dc-b2d8-43ce-bc19-b387f2a144d5))
+  (gr_text "JLCJLCJLCJLC" (at 123.617858 71.57175) (layer "B.SilkS") (tstamp 7d412b33-8b40-49d4-b213-c455fd4da61d)
+    (effects (font (size 1 1) (thickness 0.15)) (justify left bottom mirror))
+  )
   (gr_text "bdash's battery board\nWPC-S ${VERSION}" (at 118.04 55.3) (layer "F.SilkS") (tstamp 38425317-6fc3-473c-a0b9-4e4b50512bc1)
     (effects (font (face "Menlo") (size 1.25 1.25) (thickness 0.2) bold) (justify bottom))
     (render_cache "bdash's battery board\nWPC-S ${VERSION}" 0
