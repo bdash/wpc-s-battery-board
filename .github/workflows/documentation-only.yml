@@ -54,7 +54,7 @@ jobs:
     steps:
       # Check out the PCB design
       - name: Checkout PCB design
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           submodules: recursive
 

@@ -48,7 +48,7 @@ jobs:
     container: ghcr.io/inti-cmnb/kicad7_auto_full:dev
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: recursive
 
