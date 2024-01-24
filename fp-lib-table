@@ -1,0 +1,6 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "Battery_bdash")(type "KiCad")(uri "${KIPRJMOD}/Components/Footprints/Battery_bdash.pretty")(options "")(descr ""))
+  (lib (name "Connector_Molex_bdash")(type "KiCad")(uri "${KIPRJMOD}/Components/Footprints/Connector_Molex_bdash.pretty")(options "")(descr ""))
+  (lib (name "MountingHole_bdash")(type "KiCad")(uri "${KIPRJMOD}/Components/Footprints/MountingHole_bdash.pretty")(options "")(descr ""))
+)

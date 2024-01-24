@@ -12,7 +12,7 @@
         "-c",
         ".kibot/release.kibot.yaml",
         "-b",
-        "${workspaceFolderBasename}.kicad_pcb",
+        "${workspaceFolderBasename} (Small).kicad_pcb",
         "--out-dir",
         "KiBotOutput"
       ],
@@ -30,7 +30,7 @@
         "-c",
         ".kibot/documentation-only.kibot.yaml",
         "-b",
-        "${workspaceFolderBasename}.kicad_pcb",
+        "${workspaceFolderBasename} (Small).kicad_pcb",
         "--out-dir",
         "KiBotOutput"
       ],
@@ -48,7 +48,7 @@
         "-c",
         ".kibot/preflight.kibot.yaml",
         "-b",
-        "${workspaceFolderBasename}.kicad_pcb",
+        "${workspaceFolderBasename} (Small).kicad_pcb",
         "--out-dir",
         "KiBotOutput"
       ],

@@ -56,8 +56,8 @@
         }
       ],
       "drc_exclusions": [
-        "lib_footprint_issues|107550000|44620000|ac97e89e-a596-4920-a1c6-257d355fc267|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_issues|128600000|44620000|7d1b74b4-c972-449f-bc4d-9bc72e028145|00000000-0000-0000-0000-000000000000"
+        "lib_footprint_issues|107590000|44480000|ac97e89e-a596-4920-a1c6-257d355fc267|00000000-0000-0000-0000-000000000000",
+        "lib_footprint_issues|128800000|44480000|7d1b74b4-c972-449f-bc4d-9bc72e028145|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "version": 2
@@ -408,7 +408,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "WPC-S Battery Board.kicad_pro",
+    "filename": "WPC-S Battery Board (Small).kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -489,5 +489,8 @@
       ""
     ]
   ],
-  "text_variables": {}
+  "text_variables": {
+    "DATE": "",
+    "VERSION": ""
+  }
 }
