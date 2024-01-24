@@ -58,3 +58,10 @@ jobs:
           config: .kibot/preflight.kibot.yaml
           schema: ${{ vars.PROJECT_BASE_NAME }}.kicad_sch
           board: ${{ vars.PROJECT_BASE_NAME }}.kicad_pcb
+
+      # Run KiBot with the preflight script (small board variant)
+      - uses: INTI-CMNB/KiBot@v2_dk7
+        with:
+          config: .kibot/preflight.kibot.yaml
+          schema: ${{ vars.PROJECT_BASE_NAME }}.kicad_sch
+          board: ${{ vars.PROJECT_BASE_NAME }} (Small).kicad_pcb

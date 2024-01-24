@@ -95,6 +95,17 @@ jobs:
           board: ${{ vars.PROJECT_BASE_NAME }}.kicad_pcb
           cache3D: YES
 
+      # Actually run KiBot to generate all the files. The KiBot script used is
+      # in the .kibot/release.kibot.yaml folder.
+      - name: Generate documentation and fabrication files (Small)
+        uses: INTI-CMNB/KiBot@v2_k7
+        with:
+          config: .kibot/release.kibot.yaml
+          dir: ${{ env.OutputFolder }}
+          schema: ${{ vars.PROJECT_BASE_NAME }}.kicad_sch
+          board: ${{ vars.PROJECT_BASE_NAME }} (Small).kicad_pcb
+          cache3D: YES
+
       # Install the zip command line tool to package up the output
       - name: Install zip
         uses: montudor/action-zip@v1
@@ -122,6 +133,11 @@ jobs:
             ${{ env.OutputFolder }}/Renders/${{ vars.PROJECT_BASE_NAME }}-no-components-top.png
             ${{ env.OutputFolder }}/Renders/${{ vars.PROJECT_BASE_NAME }}-no-components-bottom.png
             ${{ env.OutputFolder }}/JLCPCB/${{ vars.PROJECT_BASE_NAME }}-JLCPCB.zip
+            ${{ env.OutputFolder }}/PDFs/${{ vars.PROJECT_BASE_NAME }} (Small)-assembly.pdf
+            ${{ env.OutputFolder }}/PDFs/${{ vars.PROJECT_BASE_NAME }} (Small)-schematic.pdf
+            ${{ env.OutputFolder }}/Renders/${{ vars.PROJECT_BASE_NAME }} (Small)-no-components-top.png
+            ${{ env.OutputFolder }}/Renders/${{ vars.PROJECT_BASE_NAME }} (Small)-no-components-bottom.png
+            ${{ env.OutputFolder }}/JLCPCB/${{ vars.PROJECT_BASE_NAME }} (Small)-JLCPCB.zip
             ${{ vars.PROJECT_BASE_NAME }}-Documentation.zip
 
       # Archive all the artifacts from output and attach to the action's results.
